@@ -1,13 +1,11 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 
-import counterReducer from "../features/counter/counterSlice";
 import firmReducer from "../features/FirmList/firmListSlice";
 import sortByReducer from "../features/SortBy/sortBySlice";
 import firmFilterReducer from "../features/FirmFilter/firmFilterSlice";
 
 export const store = configureStore({
 	reducer: {
-		counter: counterReducer,
 		firm: firmReducer,
 		sort: sortByReducer,
 		firmFilter: firmFilterReducer,
