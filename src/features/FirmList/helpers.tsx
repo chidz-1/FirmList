@@ -125,7 +125,7 @@ export function getFirmListMarkup({
 			}
 			return null;
 		case FETCH_API_STATUS_CODES.loading:
-			return <h3>Loading data...</h3>;
+			return <h3>Loading data...</h3>; // TODO: animated spinner would go nicely
 		case FETCH_API_STATUS_CODES.failed:
 			return <h3>Failed to load data</h3>;
 	}
