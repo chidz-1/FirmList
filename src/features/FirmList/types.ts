@@ -14,7 +14,7 @@ export type Firm = {
 	firm: {
 		id: string;
 		name: string;
-		firmRegions: FirmRegion[];
+		firmRegions: FirmRegion[]; // TODO: assumption was made about the data, i can tackle it being more that single index but that added complexity which wasnt worth killing time over
 	};
 	tier: string;
 };
